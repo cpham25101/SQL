@@ -28,6 +28,7 @@ SELECT ProductID, sum(LineTotal) as Total
 FROM Sales.SalesOrderDetail
 WHERE ProductID = '776'
 GROUP BY ProductID
+ORDER BY Total DESC
 
 --Joining both SalesOrderDetail and SalesOrderHeader table to retrieve 
 --order Summary report from 2011-2012
